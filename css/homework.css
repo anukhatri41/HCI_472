@@ -51,10 +51,6 @@ body{
     font-weight: 700;
 }
 
-.navbar-toggler{
-    filter:invert(100%);
-}
-
 h1{
     font-size: 1.8em;
     font-weight: 700;
