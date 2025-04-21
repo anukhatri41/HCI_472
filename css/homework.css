@@ -3,7 +3,9 @@
 /* CSS Document */
 
 body{
-    font-family: 'Montserrat Alternates', sans-serif !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .purple-col{
@@ -18,7 +20,7 @@ body{
     background-color: #87E87B;
 }
 
-.montserrat-alternates-regular {
+/*.montserrat-alternates-regular {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -28,7 +30,7 @@ body{
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 700;
     font-style: normal;
-}
+}*/
 
 .bg-body-tertiary{
     background-color: #F2F2F2 !important;
@@ -51,29 +53,121 @@ body{
     font-weight: 700;
 }
 
-h1{
-    font-size: 1.8em;
+.navbar-toggler{
+    filter:invert(100%);
+}
+
+/* Combo 1 - Minor Third */
+.raleway{
+    font-family: 'Raleway', sans-serif !important;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.h1-c1{
+    
+    font-size: 2.074rem;
     font-weight: 700;
 }
 
-h2{
-    font-size: 1.6em;
-    font-weight: 700;
+.h2-c1{
+    font-size: 1.728rem;
+    font-weight: 600;
 }
 
-h3{
-    font-size: 1.4em;
-    font-weight: 700;
+.h3-c1{
+    font-size: 1.44rem;
+    font-weight: 600;
 }
 
-h4{
-    font-size: 1.2em;
+.h4-c1{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.p-c1{
     font-weight: 400;
 }
 
-p{
-    font-weight: 400;
+.em-c1{
+   font-size: 1rem;
+   font-weight: 700;
+   font-style: normal;
 }
+
+.a-c1{
+    font-weight: 600;
+}
+
+/* Combo 2 - Major Third */
+.noto-serif{
+    font-family: 'Noto Serif', sans-serif !important;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.h1-c2{
+    font-size: 2.441rem;
+    font-weight: 700;
+}
+
+.h2-c2{
+    font-size: 1.953rem;
+    font-weight: 700;
+}
+
+.h3-c2{
+    font-size: 1.563rem;
+    font-weight: 700;
+}
+
+.h4-c2{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.em-c2{
+   font-size: 1rem;
+   font-weight: 700;
+   font-style: italic;
+}
+
+/* Combo 3 - Perfect Fourth */
+.limelight{
+    font-family: 'Limelight', sans-serif !important;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.playfair-display{
+    font-family: 'Playfair Display', serif !important;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.h1-c3{
+    font-size: 5.063rem;
+}
+
+.h2-c3{
+    font-size: 3.375rem;
+}
+
+.h3-c3{
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.h4-c3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+/*
+.a-c1{
+    font-weight: 600;
+}*/
 
 .footer-cy{
     text-align: center;
