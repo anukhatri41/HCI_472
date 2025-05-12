@@ -45,16 +45,20 @@ body{
 }
 
 .active{
-    color: #775696 !important;
+    color: #3B0C5A !important;
 }
 
 .navbar-brand{
-    color: #775696 !important;
-    font-weight: 700;
+    color: #3B0C5A !important;
+    font-weight: 600;
 }
 
 .navbar-toggler{
     filter:invert(100%);
+}
+
+.nav-logo{
+    padding-right: 8px;
 }
 
 /* Combo 1 - Minor Third */
@@ -206,4 +210,9 @@ body{
 
 .nav-item{
     font-weight: 700;
+}
+
+
+.img-logo{
+    padding-bottom: 8px;
 }
