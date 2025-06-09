@@ -1,0 +1,461 @@
+:root {
+  --primary-color-500: #3B0C5A;
+  --primary-color-900: #0C0212;
+  --primary-color-800: #180524;
+  --primary-color-700: #230736;
+  --primary-color-600: #2F0A48;
+  --primary-color-400: #623D7B;
+  --primary-color-300: #896D9C;
+  --primary-color-200: #B19EBD;
+  --primary-color-100: #D8CEDE;
+  --primary-color-50: #EBE7EF;
+  --yankees-blue: #171D3A;
+}
+body, html {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  min-width: 500px;
+}
+/* 
+html {
+  height: -webkit-fill-available;
+}
+
+main {
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+} */
+
+@media (min-width: 768px) {
+  .navbar-toggler {
+      display: none;
+  }
+}
+
+
+.offcanvas, .offcanvas-md, .offcanvas-sm {
+  --bs-offcanvas-width: 250px;
+  
+}
+
+/* Typography */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.027rem;
+  color: var(--yankees-blue);
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.802rem;
+  color: var(--yankees-blue);
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.602rem;
+  color: var(--yankees-blue);
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.424rem;
+  color: var(--yankees-blue);
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: var(--yankees-blue);
+}
+
+p.large {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.125rem;
+  color: var(--yankees-blue);
+}
+
+b{
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+  color: var(--yankees-blue);
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  color: var(--yankees-blue);
+}
+
+p.subtitle {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  color: var(--yankees-blue);
+}
+
+a{
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: var(--yankees-blue);
+}
+
+li {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: var(--yankees-blue);
+}
+code{
+  color: var(--yankees-blue);
+}
+
+/* This is your side bar and top bar color - customize */
+.bg-success{
+  --bs-bg-opacity: 1;
+  background-color: white !important;
+ 
+}
+
+/* This is your side bar right and left margin color - customize */
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: white !important; 
+ 
+}
+
+.offCanvas-home {
+  font-size: 18px;
+
+
+}
+.navbar-light{
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.navbar {
+  padding-left: 10px;
+}
+
+/* change the height of the navbar icon if you want */
+.navbar-height{
+  height: 60px;
+}
+
+.nav-logo{
+  height: 125px;
+  margin: auto;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+.navbar {
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0;
+}
+
+.dropdown-toggle { outline: 0; }
+
+.btn-toggle {
+  padding: .25rem .5rem;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+/* this is the background color for the main areas in the sidebar- customize */
+.btn-toggle:hover,
+.btn-toggle:focus {
+   background-color: primary; 
+}
+
+/* this is the background color for the sub areas in the sidebar- customize */
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:active {
+   background-color: var(--primary-color-200); 
+}
+
+.activeLink{
+  padding: .25rem .5rem;
+  font-weight: 600;
+  background-color: var(--primary-color-200); 
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"] {
+  color: rgba(0, 0, 0, .85);
+}
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+}
+
+.scrollarea {
+  overflow-y: auto;
+}
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+
+.code-background{
+  background-color: rgba(213, 213, 213, 0.363);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 1px 1px 1px;
+
+}
+
+.page-link{
+  color: grey;
+}
+
+.pagination {
+  --bs-pagination-hover-color: var(--yankees-blue);
+  --bs-pagination-hover-bg: var(--primary-color-200);
+  --bs-pagination-hover-border-color: var(--primary-color-200);
+  --bs-pagination-active-color: white;
+  --bs-pagination-active-bg: var(--primary-color-500);
+  --bs-pagination-active-border-color: var(--primary-color-500);
+
+}
+
+.type-specs{
+  margin: auto;
+}
+
+.color-palette{
+  height: 25vh;
+}
+
+.color-deep-purple{
+  background-color: var(--primary-color-500);
+}
+
+.color-pastel-purple{
+  background-color: var(--primary-color-200);
+}
+
+.color-white{
+  background-color: white;
+}
+
+.color-yankees-blue{
+  background-color: var(--yankees-blue);
+}
+
+.logo-image{
+  height: 25vh;
+}
+
+.nav-custom{
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.nav-underline{
+  text-decoration: underline;
+}
+
+.nav-text{
+    color: var(--yankees-blue);
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.footer-frame{
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-elem{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-text{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.footer-links{
+  display: flex;
+  gap: 16px;
+}
+
+a.footer{
+  color: var(--primary-color-500);
+}
+
+p.footer{
+  margin: 0px;
+}
+
+.logo-footer{
+  margin: auto;
+}
+
+.body-custom{
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 24px;
+}
+
+.btn-custom{
+  padding: 12px 24px;
+  color: white;
+  background-color: var(--primary-color-500);
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-custom:hover{
+  color: var(--yankees-blue);
+  background-color: var(--primary-color-200);
+  font-weight: 500;
+}
+
+.card-custom{
+  border-radius: 25px;
+  box-shadow: 0px 6px 14px -6px rgba(19, 25, 39, 0.12), 0px 10px 32px -4px rgba(19, 25, 39, 0.10);
+}
+
+.card-image{
+  width: 100%;
+  height: auto;
+}
+
+.image-wrapper{
+  padding: 60px 45px;
+  background-color: #C4C4C4;
+  border-radius: 25px 25px 0px 0px;
+}
+
+.card-titles{
+  gap: 4px;
+}
+
+p.cards{
+  margin: 0px;
+}
+
+.card-body-custom{
+  gap: 24px;
+}
+
+a.page-link{
+  color: var(--yankees-blue);
+}
+
+.layout-desktop{
+  width: 85%;
+}
+
+.layout-tablet{
+  width: 65%;
+}
+
+.layout-mobile{
+  width: 40%;
+}
+
+.home{
+  margin-bottom: 36px;
+}
+
+.home-branding{
+  height: 200px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.home-padding{
+  padding: 24px;
+  
+}
+
+.btn-display{
+  padding: 0px;
+}
